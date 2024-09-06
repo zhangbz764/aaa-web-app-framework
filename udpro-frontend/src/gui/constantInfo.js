@@ -1,0 +1,108 @@
+/**
+ * description
+ *
+ * @author Baizhou Zhang zhangbz
+ * @project SIMForms
+ * @date 2023/8/14
+ * @time 17:49
+ */
+
+const COLORS = {
+    PRIMARY: '#009999',
+    PRIMARY_DARK: '#006969',
+    PRIMARY_LIGHT: '#91d7d7',
+    SECONDARY: 'secondary',
+    SECONDARY_ALT: '#424242',
+
+    WARNING: '#e74c3c',
+    INFO: '#6f6f6f',
+    EMPTY: '#bdbdbd',
+    SITE_FILL: '#c8c8c8',
+
+    TITLE_WHITE: '#ffffff',
+    TITLE_BLACK: '#000000',
+
+    RED_LINE: '#ff0000',
+    SELECTION: '#ffff00',
+};
+
+const FNID = {
+    FN_START_SITE_IMPORT: 100,
+    FN_IMPORT_MODE: 101,
+    FN_CUSTOM_MODE: 102,
+    FN_TEMPLATE_MODE: 104,
+    FN_IMPORT_CANCEL: 105,
+    FN_EDGE_NUM: 106,
+    FN_CONFIRM_SITE: 107,
+    FN_REASSIGN_SITE: 108,
+
+    FN_STYLE_MENU: 200,
+    FN_STYLE_MENU_CONFIRM: 2000,
+    FN_STYLE_MENU_CANCEL: 2001,
+    FN_STYLE_ID: 201,
+    FN_REDLINE: 202,
+    FN_FLOOR_DEPTH: 203,
+    FN_FAR: 204,
+    FN_GENERATE_VOLUMES: 205,
+
+    FN_CAM_PRESET: 300,
+    FN_CAM_PRESET_1: 3000,
+    FN_CAM_PRESET_2: 3001,
+    FN_CAM_PRESET_3: 3002,
+    FN_CAM_PRESET_4: 3003,
+
+    FN_OPEN_DIFFUSION_PANEL: 301,
+    FN_GENERATE_STYLE: 3010,
+    FN_GENERATE_SEED: 3011,
+    FN_SAMPLING_METHOD: 3012,
+    FN_SAMPLING_STEPS: 3013,
+    FN_IMG_WIDTH: 3014,
+    FN_IMG_HEIGHT: 3015,
+    FN_CONDITIONING_SCALE: 3016,
+    FN_DIFF_PANEL_CONFIRM: 3017,
+    FN_DIFF_PANEL_CANCEL: 3018,
+    FN_DIFF_PANEL_DOWNLOAD: 3019,
+    FN_PREVIEW_WIDTH: 3020,
+    FN_PREVIEW_HEIGHT: 3021,
+    FN_IMG_SIZE: 3022,
+
+    FN_CAM_ISOMETRIC: 302,
+    FN_CAM_FOV: 303,
+}
+
+const STID = {
+    ST_CONNECT: 10000,
+    ST_EXCHANGE: 10001,
+    ST_DISCONNECT: 10002,
+    ST_EXCEPTION: 10003,
+    ST_TIMEOUT: 10004,
+}
+
+const DTID = {
+    DT_SITE_AREA: 1,
+    DT_BUILDING_HEIGHT: 2,
+    DT_BUILDING_DENSITY: 3,
+    DT_BUILDING_AREA_TOTAL: 4,
+    DT_FAR: 5,
+    DT_SURFACE_AREA: 6,
+    DT_SHAPE_COEFFICIENT: 7,
+    DT_SOUTH_AREA: 8,
+}
+
+const LAYER = {
+    LY_DEFAULT_VIEW: 'Default View',
+    LY_LOCKED_GEOS: 'Locked Geos',
+
+    LY_SITE_INTERACT: 'Site Interact',
+    LY_SITE_REDLINE: 'simforms-site',
+
+    LY_VOLUME_GEN: 'Generated Volumes',
+}
+
+const materialTags = [
+    'concrete', 'steel', 'wood', 'glass',
+]
+
+export {
+    FNID, STID, DTID, LAYER, materialTags, COLORS
+}
